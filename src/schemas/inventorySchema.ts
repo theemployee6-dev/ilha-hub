@@ -16,7 +16,7 @@ export const inventorySchema = z.object({
     .min(1, { message: "Selecione uma categoria válida para o equipamento." }),
 
   // Regra para o campo Preço:
-  price: z.coerce
+  price: z
     .number({
       error: "Por favor, digite um valor numérico válido.",
     })
